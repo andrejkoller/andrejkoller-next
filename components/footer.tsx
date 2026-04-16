@@ -10,7 +10,7 @@ export const Footer = () => {
         rel="noopener noreferrer"
         className="inline-block hover:text-(--text-hover) transition-colors duration-200"
       >
-        <RiGlobalLine className="h-4.5 w-4.5" />
+        <RiGlobalLine className="size-6" />
       </Link>
       <Link
         href={"https://github.com/andrejkoller"}
@@ -18,7 +18,7 @@ export const Footer = () => {
         rel="noopener noreferrer"
         className="inline-block hover:text-(--text-hover) transition-colors duration-200"
       >
-        <RiGithubFill className="h-4.5 w-4.5" />
+        <RiGithubFill className="size-6" />
       </Link>
       <Link
         href={"https://www.linkedin.com/in/andrejkoller"}
@@ -26,7 +26,7 @@ export const Footer = () => {
         rel="noopener noreferrer"
         className="inline-block hover:text-(--text-hover) transition-colors duration-200"
       >
-        <RiLinkedinBoxFill className="h-4.5 w-4.5" />
+        <RiLinkedinBoxFill className="size-6" />
       </Link>
     </footer>
   );
