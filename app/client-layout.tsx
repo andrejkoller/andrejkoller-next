@@ -1,16 +1,11 @@
 "use client";
 
-import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
-
 export default function ClientLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div className="flex flex-col items-center gap-4 min-h-screen w-full p-8">
-      <Header />
+    <div className="flex items-center justify-center h-full w-full leading-[1.8em]">
       <main>{children}</main>
-      <Footer />
     </div>
   );
 }

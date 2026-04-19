@@ -1,21 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
 import ClientLayout from "./client-layout";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Andrej Koller",
-  description: "Perfection is achieved when there's nothing left to take away",
+  title: "Andrej Koller, Founding Engineer, Athanasa",
+  description:
+    "Andrej Koller, Founding Engineer at Athanasa, Latest Projects/Clients: Fading Hell, Pretty Swing",
 };
 
 export default function RootLayout({
@@ -25,9 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased">
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
