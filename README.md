@@ -42,3 +42,7 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📸 Screenshots
+
+<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/14ea7686-4c73-4323-9a1e-03529e9e8f08" />
