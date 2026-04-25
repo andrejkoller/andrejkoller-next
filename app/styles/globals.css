@@ -2,7 +2,9 @@
 
 :root {
   --background: #fff;
-  --foreground: #666;
+  --foreground: #000;
+  --muted: #666;
+  --primary: #5badf0;
 }
 
 body {
@@ -19,11 +21,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #5badf0;
+  color: var(--primary);
   font-size: 0.85em;
   text-transform: uppercase;
 }
 
 a:hover {
-  border-bottom: 1px dotted #5badf0;
+  border-bottom: 1px dotted var(--primary);
 }
