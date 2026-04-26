@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="px-4">
+    <>
       <div className="flex flex-col mb-4">
         <span>Andrej Koller</span>
         <span>
@@ -53,6 +53,6 @@ export default function Home() {
           GitHub
         </Link>
       </div>
-    </div>
+    </>
   );
 }
