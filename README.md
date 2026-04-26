@@ -45,4 +45,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📸 Screenshots
 
-<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/d893a153-7cb7-48c4-9a2a-dda728bbbc58" />
+<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/a7ad7bf6-7bc2-4d32-ab4c-806689cb2b8c" />
