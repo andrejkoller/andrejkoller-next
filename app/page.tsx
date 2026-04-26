@@ -39,7 +39,7 @@ export default function Home() {
           href={"https://www.linkedin.com/in/andrejkoller"}
           target="_blank"
           rel="noopener noreferrer"
-          className="uppercase text-[0.8em]! text-[#333]!"
+          className="uppercase text-[0.8em]!"
         >
           LinkedIn
         </Link>
@@ -48,7 +48,7 @@ export default function Home() {
           href={"https://github.com/andrejkoller"}
           target="_blank"
           rel="noopener noreferrer"
-          className="uppercase text-[0.8em]! text-[#333]!"
+          className="uppercase text-[0.8em]!"
         >
           GitHub
         </Link>
