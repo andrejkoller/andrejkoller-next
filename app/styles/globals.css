@@ -4,12 +4,12 @@
   --background: #fff;
   --foreground: #000;
   --muted: #666;
-  --primary: #5badf0;
+  --primary: #2A56C6;
 }
 
 body {
   background: var(--background);
-  color: var(--muted);
+  color: var(--foreground);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
   -webkit-font-smoothing: antialiased;
@@ -21,11 +21,14 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--foreground);
   font-size: 0.85em;
   text-transform: uppercase;
 }
 
 a:hover {
-  border-bottom: 1px dotted var(--foreground);
+  border-bottom: 1px dotted var(--primary);
+}
+
+.brand {
+  color: var(--primary);
 }
