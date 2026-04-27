@@ -11,6 +11,7 @@ export default function Home() {
             href="https://athanasa.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="brand"
           >
             Athanasa
           </Link>
@@ -21,14 +22,16 @@ export default function Home() {
             href={"https://fadinghell.com"}
             target="_blank"
             rel="noopener noreferrer"
+            className="brand"
           >
             Fading Hell
-          </Link>{" "}
-          •{" "}
+          </Link>
+          <span className="mx-1">•</span>
           <Link
             href={"https://prettyswing.com"}
             target="_blank"
             rel="noopener noreferrer"
+            className="brand"
           >
             Pretty Swing
           </Link>
