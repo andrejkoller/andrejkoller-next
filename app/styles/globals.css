@@ -4,7 +4,7 @@
   --background: #fff;
   --foreground: #000;
   --muted: #666;
-  --primary: #2A56C6;
+  --primary: #2a56c6;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 
 a {
   text-decoration: none;
-  font-size: 0.85em;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
 
