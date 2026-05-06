@@ -2,18 +2,11 @@
 
 A minimal personal landing page for Andrej Koller — Founding Engineer at [Athanasa](https://athanasa.com). Shows current role, latest projects/clients, and social links.
 
-## ✨ Features
-
-- Minimalist Design — Clean, centered single-page layout
-- Server-Side Rendering — Fast initial page loads with Next.js App Router
-- TypeScript — Full type safety across the application
-- Responsive Design — Mobile-first approach with Tailwind CSS v4
-
 ## 🛠️ Tech Stack
 
-- Framework: Next.js
-- Language: TypeScript
-- Styling: Tailwind CSS
+- **Framework**: [Next.js 16](https://nextjs.org) (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
 
 ## 📋 Prerequisites
 
