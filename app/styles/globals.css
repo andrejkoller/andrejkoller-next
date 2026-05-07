@@ -1,34 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fff;
-  --foreground: #000;
-  --muted: #666;
-  --primary: #2a56c6;
+  --background: #ffffff;
+  --foreground: #000000;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-}
-
-a:hover {
-  border-bottom: 1px dotted var(--primary);
-}
-
-.brand {
-  color: var(--primary);
 }
