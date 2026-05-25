@@ -13,7 +13,7 @@ export const ThemeSwitcher = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="text-secondary-foreground uppercase hover:text-foreground transition-colors duration-200 cursor-pointer select-none"
+      className="bg-transparent text-foreground font-medium uppercase cursor-pointer hover:opacity-100 transition-all duration-200 opacity-20 scale-95 rounded border-0 inline-block select-none tracking-wider"
     >
       {isDark && <span>Dark</span>}
       {isLight && <span>Light</span>}
