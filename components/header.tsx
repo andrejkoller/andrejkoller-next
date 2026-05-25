@@ -10,15 +10,16 @@ export const Header = () => {
       </div>
       <ul className="flex gap-6">
         {headerLinksConfig.map((link) => (
-          <li
-            key={link.key}
-            className="text-secondary-foreground font-medium uppercase"
-          >
+          <li key={link.key}>
             <Link
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-foreground transition-colors duration-200"
+              className={
+                link.key === "official-website"
+                  ? "bg-transparent text-foreground font-medium uppercase cursor-pointer hover:opacity-100 transition-all duration-200 opacity-100 scale-95 rounded border-0 inline-block tracking-wider"
+                  : "bg-transparent text-foreground font-medium uppercase cursor-pointer hover:opacity-100 transition-all duration-200 opacity-20 scale-95 rounded border-0 inline-block tracking-wider"
+              }
             >
               {link.label}
             </Link>
@@ -28,7 +29,7 @@ export const Header = () => {
       <div className="flex items-center">
         <Link
           href={"mailto:andrejkoller@outlook.com"}
-          className="text-secondary-foreground font-medium uppercase hover:text-foreground transition-colors duration-200"
+          className="bg-transparent text-foreground font-medium uppercase cursor-pointer hover:opacity-100 transition-all duration-200 opacity-20 scale-95 rounded border-0 inline-block tracking-wider"
         >
           Contact
         </Link>
