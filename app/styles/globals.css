@@ -9,6 +9,12 @@
   --text-muted: rgba(255, 255, 255, 0.2);
   --text-primary: rgba(255, 255, 255, 1);
 
+  --bg-primary: rgba(255, 255, 255, 0.04);
+
+  --overlay: rgba(0, 0, 0, 0.5);
+
+  --border: rgba(255, 255, 255, 0.1);
+
   --font-geist-sans: "Geist Sans", sans-serif;
   --font-geist-mono: "Geist Mono", monospace;
 }
@@ -19,6 +25,12 @@
 
   --text-muted: rgba(0, 0, 0, 0.2);
   --text-primary: rgba(0, 0, 0, 1);
+
+  --bg-primary: rgba(0, 0, 0, 0.04);
+
+  --overlay: rgba(255, 255, 255, 0.5);
+
+  --border: rgba(0, 0, 0, 0.1);
 }
 
 @theme inline {
@@ -26,6 +38,9 @@
   --color-foreground: var(--foreground);
   --color-text-muted: var(--text-muted);
   --color-text-primary: var(--text-primary);
+  --color-bg-primary: var(--bg-primary);
+  --color-overlay: var(--overlay);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
