@@ -22,11 +22,10 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-border: var(--border);
-  --color-hover-foreground: var(--hover-foreground);
+  --background: var(--background);
+  --foreground: var(--foreground);
+  --text-muted: var(--text-muted);
+  --text-primary: var(--text-primary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
