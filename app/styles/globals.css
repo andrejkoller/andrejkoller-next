@@ -22,17 +22,17 @@
 }
 
 @theme inline {
-  --background: var(--background);
-  --foreground: var(--foreground);
-  --text-muted: var(--text-muted);
-  --text-primary: var(--text-primary);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-text-muted: var(--text-muted);
+  --color-text-primary: var(--text-primary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-background);
+  color: var(--color-foreground);
   font-size: 0.75rem;
   font-family: var(--font-mono), monospace;
   margin: 0;
