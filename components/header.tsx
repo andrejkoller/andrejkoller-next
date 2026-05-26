@@ -17,8 +17,8 @@ export const Header = () => {
               rel="noopener noreferrer"
               className={
                 link.key === "official-website"
-                  ? "bg-transparent text-foreground font-medium uppercase cursor-pointer hover:opacity-100 transition-all duration-200 opacity-100 scale-95 rounded border-0 inline-block tracking-wider"
-                  : "bg-transparent text-foreground font-medium uppercase cursor-pointer hover:opacity-100 transition-all duration-200 opacity-20 scale-95 rounded border-0 inline-block tracking-wider"
+                  ? "bg-transparent text-(--text-primary) font-medium uppercase cursor-pointer scale-95 rounded border-0 inline-block tracking-wider"
+                  : "bg-transparent text-(--text-muted) font-medium uppercase cursor-pointer hover:text-(--text-primary) transition-all duration-200 scale-95 rounded border-0 inline-block tracking-wider"
               }
             >
               {link.label}
@@ -29,7 +29,7 @@ export const Header = () => {
       <div className="flex items-center">
         <Link
           href={"mailto:andrejkoller@outlook.com"}
-          className="bg-transparent text-foreground font-medium uppercase cursor-pointer hover:opacity-100 transition-all duration-200 opacity-20 scale-95 rounded border-0 inline-block tracking-wider"
+          className="bg-transparent text-(--text-muted) font-medium uppercase cursor-pointer hover:text-(--text-primary) transition-all duration-200 scale-95 rounded border-0 inline-block tracking-wider"
         >
           Contact
         </Link>

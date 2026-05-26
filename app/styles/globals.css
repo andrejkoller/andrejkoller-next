@@ -5,7 +5,9 @@
 
   --background: #000000;
   --foreground: #ffffff;
-  --secondary-foreground: #666666;
+
+  --text-muted: rgba(255, 255, 255, 0.2);
+  --text-primary: rgba(255, 255, 255, 1);
 
   --font-geist-sans: "Geist Sans", sans-serif;
   --font-geist-mono: "Geist Mono", monospace;
@@ -14,7 +16,9 @@
 [data-theme="light"] {
   --background: #ffffff;
   --foreground: #000000;
-  --secondary-foreground: #999999;
+
+  --text-muted: rgba(0, 0, 0, 0.2);
+  --text-primary: rgba(0, 0, 0, 1);
 }
 
 @theme inline {
