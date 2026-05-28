@@ -18,20 +18,8 @@ export const Header = () => {
           aria-label="Menu"
           onClick={() => setIsSidebarOpen(true)}
         >
-          <span
-            className="block w-4.5 h-[1.5px] rounded-full transition-all duration-200"
-            style={{
-              backgroundColor: "var(--color-text-muted)",
-              transform: "none",
-            }}
-          ></span>
-          <span
-            className="block w-4.5 h-[1.5px] rounded-full transition-all duration-200"
-            style={{
-              backgroundColor: "var(--color-text-muted)",
-              transform: "none",
-            }}
-          ></span>
+          <span className="block w-4.5 h-0.5 rounded-full bg-(--color-text-muted) transition-all duration-200"></span>
+          <span className="block w-4.5 h-0.5 rounded-full bg-(--color-text-muted) transition-all duration-200"></span>
         </button>
 
         {/* Left side - hidden on mobile/tablet */}

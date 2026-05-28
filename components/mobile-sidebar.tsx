@@ -33,20 +33,8 @@ export const MobileSidebar = ({ isOpen, onClose }: MobileSidebarProps) => {
             className="pointer-events-auto flex md:hidden flex-col justify-center items-start gap-1.25 w-8 h-5 cursor-pointer bg-transparent border-0 z-50"
             aria-label="Toggle menu"
           >
-            <span
-              className="block w-4.5 h-[1.5px] rounded-full transition-all duration-200"
-              style={{
-                backgroundColor: "var(--color-text-muted)",
-                transform: "translateY(3.25px) rotate(45deg)",
-              }}
-            />
-            <span
-              className="block w-4.5 h-[1.5px] rounded-full transition-all duration-200"
-              style={{
-                backgroundColor: "var(--color-text-muted)",
-                transform: "translateY(-3.25px) rotate(-45deg)",
-              }}
-            />
+            <span className="block w-4.5 h-[1.5px] rounded-full bg-(--color-text-muted) transition-all duration-200 translate-y-[3.25px] rotate-45" />
+            <span className="block w-4.5 h-[1.5px] rounded-full bg-(--color-text-muted) transition-all duration-200 translate-y-[-3.25px] -rotate-45" />
           </button>
         </div>
 
