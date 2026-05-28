@@ -3,8 +3,8 @@
 :root {
   --header-height: 3rem;
 
-  --background: #000000;
-  --foreground: #ffffff;
+  --background: rgb(0, 0, 0);
+  --foreground: rgb(255, 255, 255);
 
   --text-muted: rgba(255, 255, 255, 0.2);
   --text-primary: rgba(255, 255, 255, 1);
@@ -20,8 +20,8 @@
 }
 
 [data-theme="light"] {
-  --background: #ffffff;
-  --foreground: #000000;
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(0, 0, 0);
 
   --text-muted: rgba(0, 0, 0, 0.2);
   --text-primary: rgba(0, 0, 0, 1);
