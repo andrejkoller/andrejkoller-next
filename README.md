@@ -85,8 +85,7 @@ andrejkoller-next/
 
 ## Screenshots
 
-![Dark mode](public/images/screenshot-1.png)
-![Light mode](public/images/screenshot-2.png)
+![Screenshot](public/images/screenshot.png)
 
 ## License
 
