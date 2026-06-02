@@ -24,4 +24,14 @@ export const headerLinksConfig = [
     label: "Online Shop",
     href: "https://shop.andrejkoller.com",
   },
+  {
+    key: "music-collection",
+    label: "Music Collection",
+    href: "https://music.andrejkoller.com",
+  },
+  {
+    key: "book-archive",
+    label: "Book Archive",
+    href: "https://books.andrejkoller.com",
+  },
 ];

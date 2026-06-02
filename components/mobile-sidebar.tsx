@@ -2,7 +2,6 @@
 
 import { headerLinksConfig } from "@/config/header-links-config";
 import Link from "next/link";
-import { ThemeSwitcher } from "@/components/theme/theme-switcher";
 
 interface MobileSidebarProps {
   isOpen: boolean;
@@ -22,7 +21,7 @@ export const MobileSidebar = ({ isOpen, onClose }: MobileSidebarProps) => {
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 h-full w-[75vw] border-r border-(--color-border) bg-(--color-background) shadow-lg z-50 transform transition-transform duration-200 ease-in-out flex flex-col lg:hidden ${
+        className={`fixed top-0 left-0 h-full w-[75vw] border-r border-(--color-border) bg-(--color-background) z-50 transform transition-transform duration-200 ease-in-out flex flex-col lg:hidden ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -30,11 +29,11 @@ export const MobileSidebar = ({ isOpen, onClose }: MobileSidebarProps) => {
         <div className="relative h-(--header-height) flex items-center justify-start px-6">
           <button
             onClick={onClose}
-            className="pointer-events-auto flex md:hidden flex-col justify-center items-start gap-1.25 w-8 h-5 cursor-pointer bg-transparent border-0 z-50"
+            className="pointer-events-auto flex lg:hidden flex-col justify-center items-start gap-1.25 w-8 h-5 cursor-pointer bg-transparent border-0 z-50"
             aria-label="Toggle menu"
           >
-            <span className="block w-4.5 h-[1.5px] rounded-full bg-(--color-text-muted) transition-all duration-200 translate-y-[3.25px] rotate-45" />
-            <span className="block w-4.5 h-[1.5px] rounded-full bg-(--color-text-muted) transition-all duration-200 translate-y-[-3.25px] -rotate-45" />
+            <span className="block w-4.5 h-0.5 rounded-full bg-(--color-text-muted) transition-all duration-200 translate-y-[3.25px] rotate-45" />
+            <span className="block w-4.5 h-0.5 rounded-full bg-(--color-text-muted) transition-all duration-200 translate-y-[-3.25px] -rotate-45" />
           </button>
         </div>
 
@@ -60,11 +59,6 @@ export const MobileSidebar = ({ isOpen, onClose }: MobileSidebarProps) => {
             ))}
           </ul>
         </nav>
-
-        {/* Theme Switcher at bottom */}
-        <div className="px-6 py-6">
-          <ThemeSwitcher />
-        </div>
       </aside>
     </>
   );
