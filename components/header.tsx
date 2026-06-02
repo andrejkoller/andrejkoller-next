@@ -2,7 +2,6 @@
 
 import { headerLinksConfig } from "@/config/header-links-config";
 import Link from "next/link";
-import { ThemeSwitcher } from "@/components/theme/theme-switcher";
 import { MobileSidebar } from "@/components/mobile-sidebar";
 import { useState } from "react";
 
@@ -22,13 +21,8 @@ export const Header = () => {
           <span className="block w-4.5 h-0.5 rounded-full bg-(--color-text-muted) transition-all duration-200"></span>
         </button>
 
-        {/* Left side - hidden on mobile/tablet */}
-        <div className="hidden lg:flex items-center">
-          <ThemeSwitcher />
-        </div>
-
         {/* Center - hidden on mobile/tablet */}
-        <ul className="hidden lg:flex gap-6">
+        <ul className="hidden w-full lg:flex lg:justify-center gap-6">
           {headerLinksConfig.map((link) => (
             <li key={link.key}>
               <Link
@@ -46,16 +40,6 @@ export const Header = () => {
             </li>
           ))}
         </ul>
-
-        {/* Right side */}
-        <div className="flex items-center">
-          <Link
-            href={"mailto:andrejkoller@outlook.com"}
-            className="bg-transparent text-(--color-text-muted) font-medium uppercase cursor-pointer hover:text-(--color-text-primary) transition-all duration-200 scale-95 rounded border-0 inline-block tracking-wider"
-          >
-            Contact
-          </Link>
-        </div>
       </header>
 
       <MobileSidebar
