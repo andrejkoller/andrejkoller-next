@@ -70,8 +70,8 @@ andrejkoller-next/
 │   └── header-links-config.ts    # Header navigation links configuration
 ├── public/
 │   └── images/
-│       ├── screenshot-1.png      # Screenshot dark mode
-│       └── screenshot-2.png      # Screenshot light mode
+│       ├── screenshot-1.png
+│       └── screenshot-2.png
 ├── eslint.config.mjs             # ESLint configuration
 ├── LICENSE
 ├── next-env.d.ts                 # Next.js TypeScript declarations
@@ -85,7 +85,8 @@ andrejkoller-next/
 
 ## Screenshots
 
-![Screenshot](public/images/screenshot.png)
+![Screenshot 1](public/images/screenshot-1.png)
+![Screenshot 2](public/images/screenshot-2.png)
 
 ## License
 
