@@ -39,18 +39,14 @@ export const MobileSidebar = ({ isOpen, onClose }: MobileSidebarProps) => {
 
         {/* Navigation Links */}
         <nav className="flex-1 pt-3 px-6">
-          <ul className="flex flex-col">
+          <ul className="flex flex-col gap-4">
             {headerLinksConfig.map((link) => (
               <li key={link.key} className="pointer-events-auto w-full">
                 <Link
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={
-                    link.key === "official-website"
-                      ? "inline-block w-full px-2 py-1.75 tracking-wider cursor-pointer bg-(--color-bg-primary) transition-colors duration-200 rounded-md text-(--color-text-primary) uppercase"
-                      : "inline-block w-full px-2 py-1.75 tracking-wider cursor-pointer bg-transparent transition-colors duration-200 rounded-md text-(--color-text-muted) hover:text-(--color-text-primary) uppercase"
-                  }
+                  className="inline-block w-full tracking-wider cursor-pointer bg-transparent transition-colors duration-200 text-(--color-text-muted) hover:text-(--color-text-primary) uppercase"
                   onClick={onClose}
                 >
                   {link.label}

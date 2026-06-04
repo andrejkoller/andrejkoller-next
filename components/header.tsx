@@ -29,11 +29,7 @@ export const Header = () => {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={
-                  link.key === "official-website"
-                    ? "bg-transparent text-(--color-text-primary) font-medium uppercase cursor-pointer scale-95 rounded border-0 inline-block tracking-wider"
-                    : "bg-transparent text-(--color-text-muted) font-medium uppercase cursor-pointer hover:text-(--color-text-primary) transition-all duration-200 scale-95 rounded border-0 inline-block tracking-wider"
-                }
+                className="bg-transparent text-(--color-text-muted) font-medium uppercase cursor-pointer hover:text-(--color-text-primary) transition-colors duration-200 scale-95 rounded border-0 inline-block tracking-wider"
               >
                 {link.label}
               </Link>
@@ -42,6 +38,7 @@ export const Header = () => {
         </ul>
       </header>
 
+      {/* Mobile Sidebar - visible only on mobile/tablet */}
       <MobileSidebar
         isOpen={isSidebarOpen}
         onClose={() => setIsSidebarOpen(false)}
