@@ -4,14 +4,14 @@ import { useCallback, useEffect, useSyncExternalStore } from "react";
 import { ThemeContext } from "./theme-context";
 import type { Theme } from "./types";
 
-const getServerSnapshot = (): Theme => "dark";
+const getServerSnapshot = (): Theme => "light";
 
 const getSnapshot = (): Theme => {
   const stored = localStorage.getItem("theme") as Theme | null;
   if (stored) return stored;
   return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+    ? "light"
+    : "dark";
 };
 
 const subscribe = (callback: () => void) => {
