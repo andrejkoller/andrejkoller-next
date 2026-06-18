@@ -32,8 +32,8 @@ export const MobileSidebar = ({ isOpen, onClose }: MobileSidebarProps) => {
             className="pointer-events-auto flex min-[1080px]:hidden flex-col justify-center items-start gap-1.25 w-8 h-5 cursor-pointer bg-transparent border-0 z-50"
             aria-label="Toggle menu"
           >
-            <span className="block w-4.5 h-0.5 rounded-full bg-(--color-text-muted) transition-all duration-200 translate-y-[3.25px] rotate-45" />
-            <span className="block w-4.5 h-0.5 rounded-full bg-(--color-text-muted) transition-all duration-200 translate-y-[-3.25px] -rotate-45" />
+            <span className="block w-4.5 h-0.5 rounded-full bg-(--color-muted) transition-all duration-200 translate-y-[3.25px] rotate-45" />
+            <span className="block w-4.5 h-0.5 rounded-full bg-(--color-muted) transition-all duration-200 translate-y-[-3.25px] -rotate-45" />
           </button>
         </div>
 
@@ -48,8 +48,8 @@ export const MobileSidebar = ({ isOpen, onClose }: MobileSidebarProps) => {
                   rel="noopener noreferrer"
                   className={
                     link.key === "official-website"
-                      ? "bg-transparent text-(--color-text-primary) font-medium uppercase cursor-pointer scale-95 inline-block tracking-wider"
-                      : "bg-transparent text-(--color-text-muted) font-medium uppercase cursor-pointer hover:text-(--color-text-primary) transition-colors duration-200 scale-95 inline-block tracking-wider"
+                      ? "bg-transparent text-(--color-primary) font-medium uppercase cursor-pointer scale-95 inline-block tracking-wider"
+                      : "bg-transparent text-(--color-muted) font-medium uppercase cursor-pointer hover:text-(--color-primary) transition-colors duration-200 scale-95 inline-block tracking-wider"
                   }
                   onClick={onClose}
                 >
