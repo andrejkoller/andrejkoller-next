@@ -17,8 +17,8 @@ export const Header = () => {
           aria-label="Menu"
           onClick={() => setIsSidebarOpen(true)}
         >
-          <span className="block w-4.5 h-0.5 rounded-full bg-(--color-text-muted) transition-all duration-200"></span>
-          <span className="block w-4.5 h-0.5 rounded-full bg-(--color-text-muted) transition-all duration-200"></span>
+          <span className="block w-4.5 h-0.5 rounded-full bg-(--color-muted) transition-all duration-200"></span>
+          <span className="block w-4.5 h-0.5 rounded-full bg-(--color-muted) transition-all duration-200"></span>
         </button>
 
         {/* Center - hidden on mobile/tablet */}
@@ -31,8 +31,8 @@ export const Header = () => {
                 rel="noopener noreferrer"
                 className={
                   link.key === "official-website"
-                    ? "bg-transparent text-(--color-text-primary) font-medium uppercase cursor-pointer scale-95 inline-block tracking-wider"
-                    : "bg-transparent text-(--color-text-muted) font-medium uppercase cursor-pointer hover:text-(--color-text-primary) transition-colors duration-200 scale-95 inline-block tracking-wider"
+                    ? "bg-transparent text-(--color-primary) font-medium uppercase cursor-pointer scale-95 inline-block tracking-wider"
+                    : "bg-transparent text-(--color-muted) font-medium uppercase cursor-pointer hover:text-(--color-primary) transition-colors duration-200 scale-95 inline-block tracking-wider"
                 }
               >
                 {link.label}

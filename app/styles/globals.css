@@ -4,53 +4,41 @@
   --header-height: 3rem;
   --footer-height: 3rem;
 
-  --background: rgb(255, 255, 255);
-  --foreground: rgb(0, 0, 0);
+  --color-background: rgb(255, 255, 255);
+  --color-foreground: rgb(0, 0, 0);
 
-  --text-muted: rgba(0, 0, 0, 0.2);
-  --text-primary: rgba(0, 0, 0, 1);
+  --color-muted: rgba(0, 0, 0, 0.2);
+  --color-primary: rgba(0, 0, 0, 1);
 
-  --bg-primary: rgba(0, 0, 0, 0.04);
+  --color-bg-primary: rgba(0, 0, 0, 0.04);
 
-  --overlay: rgba(255, 255, 255, 0.5);
+  --color-overlay: rgba(255, 255, 255, 0.5);
 
-  --border: rgba(0, 0, 0, 0.1);
+  --color-border: rgba(0, 0, 0, 0.1);
 
   --font-geist-sans: "Geist Sans", sans-serif;
   --font-geist-mono: "Geist Mono", monospace;
 }
 
 [data-theme="dark"] {
-  --background: rgb(0, 0, 0);
-  --foreground: rgb(255, 255, 255);
+  --color-background: rgb(0, 0, 0);
+  --color-foreground: rgb(255, 255, 255);
 
-  --text-muted: rgba(255, 255, 255, 0.2);
-  --text-primary: rgba(255, 255, 255, 1);
+  --color-muted: rgba(255, 255, 255, 0.2);
+  --color-primary: rgba(255, 255, 255, 1);
 
-  --bg-primary: rgba(255, 255, 255, 0.04);
+  --color-bg-primary: rgba(255, 255, 255, 0.04);
 
-  --overlay: rgba(0, 0, 0, 0.5);
+  --color-overlay: rgba(0, 0, 0, 0.5);
 
-  --border: rgba(255, 255, 255, 0.1);
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-text-muted: var(--text-muted);
-  --color-text-primary: var(--text-primary);
-  --color-bg-primary: var(--bg-primary);
-  --color-overlay: var(--overlay);
-  --color-border: var(--border);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-border: rgba(255, 255, 255, 0.1);
 }
 
 body {
   background: var(--color-background);
   color: var(--color-foreground);
   font-size: 0.75rem;
-  font-family: var(--font-mono), monospace;
+  font-family: var(--font-geist-mono), monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
