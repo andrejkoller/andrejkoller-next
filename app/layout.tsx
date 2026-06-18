@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Andrej Koller",
-  description: "Personal website of Andrej Koller.",
+  description: "Official website of Andrej Koller.",
 };
 
 export default function RootLayout({
