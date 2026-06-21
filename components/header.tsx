@@ -13,16 +13,15 @@ export const Header = () => {
       <header className="flex justify-between items-center h-(--header-height) px-6">
         {/* Hamburger Menu - visible only on mobile/tablet */}
         <button
-          className="flex flex-col gap-1.5 min-[1080px]:hidden"
+          className="flex flex-col gap-1.5 min-[1024px]:hidden"
           aria-label="Menu"
           onClick={() => setIsSidebarOpen(true)}
         >
           <span className="block w-4.5 h-0.5 rounded-full bg-(--color-muted) transition-all duration-200"></span>
           <span className="block w-4.5 h-0.5 rounded-full bg-(--color-muted) transition-all duration-200"></span>
         </button>
-
         {/* Center - hidden on mobile/tablet */}
-        <ul className="hidden w-full min-[1080px]:flex min-[1080px]:justify-center gap-6">
+        <ul className="hidden w-full min-[1024px]:flex min-[1024px]:justify-start gap-6">
           {headerLinksConfig.map((link) => (
             <li key={link.key}>
               <Link
@@ -40,6 +39,14 @@ export const Header = () => {
             </li>
           ))}
         </ul>
+        <div className="flex items-center">
+          <Link
+            href={"mailto:andrejkoller@outlook.com"}
+            className="bg-transparent text-(--color-muted) font-medium uppercase cursor-pointer hover:text-(--color-primary) transition-colors duration-200 scale-95 inline-block tracking-wider"
+          >
+            Contact
+          </Link>
+        </div>
       </header>
 
       {/* Mobile Sidebar - visible only on mobile/tablet */}
