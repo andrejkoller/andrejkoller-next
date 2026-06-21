@@ -15,11 +15,6 @@ export const headerLinksConfig = [
     href: "https://art.andrejkoller.com",
   },
   {
-    key: "project-showcase",
-    label: "Project Showcase",
-    href: "https://projects.andrejkoller.com",
-  },
-  {
     key: "online-shop",
     label: "Online Shop",
     href: "https://shop.andrejkoller.com",
