@@ -2,8 +2,21 @@
 
 :root {
   --header-height: 3rem;
-  --footer-height: 3rem;
 
+  --color-background: rgb(0, 0, 0);
+  --color-foreground: rgb(255, 255, 255);
+
+  --color-muted: rgba(255, 255, 255, 0.2);
+  --color-primary: rgba(255, 255, 255, 1);
+
+  --color-bg-primary: rgba(255, 255, 255, 0.04);
+
+  --color-overlay: rgba(0, 0, 0, 0.5);
+
+  --color-border: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] {
   --color-background: rgb(255, 255, 255);
   --color-foreground: rgb(0, 0, 0);
 
@@ -18,20 +31,6 @@
 
   --font-geist-sans: "Geist Sans", sans-serif;
   --font-geist-mono: "Geist Mono", monospace;
-}
-
-[data-theme="dark"] {
-  --color-background: rgb(0, 0, 0);
-  --color-foreground: rgb(255, 255, 255);
-
-  --color-muted: rgba(255, 255, 255, 0.2);
-  --color-primary: rgba(255, 255, 255, 1);
-
-  --color-bg-primary: rgba(255, 255, 255, 0.04);
-
-  --color-overlay: rgba(0, 0, 0, 0.5);
-
-  --color-border: rgba(255, 255, 255, 0.1);
 }
 
 body {
