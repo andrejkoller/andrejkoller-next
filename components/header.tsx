@@ -21,7 +21,7 @@ export const Header = () => {
           <span className="block w-4.5 h-0.5 rounded-full bg-(--color-muted) transition-all duration-200"></span>
         </button>
         {/* Center - hidden on mobile/tablet */}
-        <ul className="hidden w-full min-[768px]:flex min-[768px]:justify-start gap-6">
+        <ul className="hidden w-full min-[768px]:flex min-[768px]:justify-center gap-6">
           {headerLinksConfig.map((link) => (
             <li key={link.key}>
               <Link
@@ -39,14 +39,6 @@ export const Header = () => {
             </li>
           ))}
         </ul>
-        <div className="flex items-center">
-          <Link
-            href={"mailto:contact@andrejkoller.com"}
-            className="bg-transparent text-(--color-muted) font-medium uppercase cursor-pointer hover:text-(--color-primary) transition-colors duration-200 scale-95 inline-block tracking-wider"
-          >
-            Contact
-          </Link>
-        </div>
       </header>
 
       {/* Mobile Sidebar - visible only on mobile/tablet */}
