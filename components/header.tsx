@@ -41,7 +41,7 @@ export const Header = () => {
         </ul>
         <div className="flex items-center">
           <Link
-            href={"mailto:andrejkoller@outlook.com"}
+            href={"mailto:contact@andrejkoller.com"}
             className="bg-transparent text-(--color-muted) font-medium uppercase cursor-pointer hover:text-(--color-primary) transition-colors duration-200 scale-95 inline-block tracking-wider"
           >
             Contact
